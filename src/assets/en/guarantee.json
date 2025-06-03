@@ -1,0 +1,31 @@
+{
+  "guarantee": {
+    "heading": "You're Covered with Our Self-Transfer Guarantee",
+    "lead": "Book with confidence. If a delay causes you to miss your connection, we'll help get you back on track — at no extra cost.",
+    "items": [
+      {
+        "icon": "refresh-cw",
+        "title": "Free Rebooking or Refund",
+        "description": "We’ll rebook you for free or refund your trip if you're eligible and miss your next flight due to a delay."
+      },
+      {
+        "icon": "bed",
+        "title": "Overnight Accommodation",
+        "description": "If you're stuck overnight, we’ll help cover hotel costs so you can rest easy."
+      },
+      {
+        "icon": "utensils",
+        "title": "Meals and Refreshments",
+        "description": "Get compensated for food and drinks during long layover delays (4+ hours)."
+      },
+      {
+        "icon": "info",
+        "title": "Easy Eligibility",
+        "description": "You just need to contact us before your missed flight departs. No lengthy forms or arguments."
+      }
+    ],
+    "note": "This coverage doesn’t apply to changes you make yourself, baggage issues due to your airline, or events outside our control (e.g. weather).",
+    "linkText": "Read full terms & conditions",
+    "linkUrl": "/terms"
+  }
+}

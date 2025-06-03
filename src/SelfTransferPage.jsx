@@ -20,24 +20,43 @@ function SelfTransferPage() {
   const [introContent, setIntroContent] = useState({});
   const [labels, setLabels] = useState({});
   const [sectionLabels, setSectionLabels] = useState({});
-  const [lang, setLang] = useState(window.location.pathname.split("/")[1] || "en");
+  const [lang, setLang] = useState(() => {
+    const maybeLang = window.location.pathname.split("/")[1];
+  return maybeLang && maybeLang.length === 2 ? maybeLang : "en";
+    });
   const beforeRef = useRef(null);
   const duringRef = useRef(null);
 
-  const loadLanguage = useCallback((selectedLang) => {
-  const path = `./assets/${selectedLang}`;
+  const contentMap = import.meta.glob('./lang/**/**/*.json');
 
-  Promise.all([
-    import(`${path}/hero.json`),
-    import(`${path}/intro.json`),
-    import(`${path}/faq.json`),
-    import(`${path}/cards.json`),
-    import(`${path}/labels.json`),
-    import(`${path}/sections.json`),
-    import(`${path}/notice.json`),
-    import(`${path}/guarantee.json`)
-  ])
-    .then(([hero, intro, faq, cards, labels, sections, notice, guarantee]) => {
+  const loadLanguage = useCallback(async (selectedLang) => {
+    try {
+      // 🪵 STEP 1: Log all available file paths
+      console.log("🧩 Available keys in contentMap:", Object.keys(contentMap));
+
+      const paths = [
+        'hero.json',
+        'intro.json',
+        'faq.json',
+        'cards.json',
+        'labels.json',
+        'sections.json',
+        'notice.json',
+        'guarantee.json'
+      ];
+
+      // ✅ STEP 2: Load language files with error handling for missing ones
+      const data = await Promise.all(
+        paths.map(p => {
+          const key = `./lang/${selectedLang}/${p}`;
+          const loader = contentMap[key];
+          if (!loader) throw new Error(`Missing import for: ${key}`);
+          return loader().then(mod => mod.default);
+        })
+      );
+
+      const [hero, intro, faq, cards, labels, sections, notice, guarantee] = data;
+
       setHeroContent(hero.hero);
       setIntroContent(intro.intro);
       setFaqs(faq.faq);
@@ -51,16 +70,17 @@ function SelfTransferPage() {
         JSON.parse(localStorage.getItem("selfTransferChecklist")) ||
         cards.cards.map(() => false)
       );
+
       trackEvent("Language Loaded", { lang: selectedLang });
-    })
-    .catch((err) => {
+    } catch (err) {
       console.warn("Falling back to English content.", err);
       if (selectedLang !== "en") {
-        loadLanguage("en"); // Retry with English fallback
+        loadLanguage("en");
+      } else {
+        console.error("❌ Even English content failed to load.");
       }
-    });
-}, []);
-
+    }
+  }, []);
   useEffect(() => {
     loadLanguage(lang);
   }, [lang, loadLanguage]);
