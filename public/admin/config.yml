@@ -6,7 +6,7 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 locale: 'en'
-local_backend: true
+local_backend: false
 
 collections:
   - name: "en_content"
