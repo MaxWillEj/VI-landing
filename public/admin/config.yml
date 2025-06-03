@@ -38,7 +38,10 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: string, i18n: true }
               - { label: "Lead", name: "lead", widget: string, i18n: true }
-              - { label: "Body", name: "body", widget: list, i18n: true, field: { label: "Paragraph", widget: text } }
+              - { label: "Body", name: "body", widget: list, i18n: true, field:
+  label: "Paragraph"
+  name: "paragraph"
+  widget: text }
 
           - { label: "Notice", name: "notice", widget: string, i18n: true }
 
@@ -130,7 +133,10 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: string, i18n: true }
               - { label: "Lead", name: "lead", widget: string, i18n: true }
-              - { label: "Body", name: "body", widget: list, i18n: true, field: { label: "Paragraph", widget: text } }
+              - { label: "Body", name: "body", widget: list, i18n: true, field:
+  label: "Paragraph"
+  name: "paragraph"
+  widget: text }
 
           - { label: "Notice", name: "notice", widget: string, i18n: true }
 
