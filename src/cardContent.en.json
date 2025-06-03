@@ -1,0 +1,159 @@
+{
+  "hero": {
+  "headline": "Smarter travel starts here.",
+  "subheadline": "Book flexible self-transfer flights with confidence.",
+  "ctaLabel": "Search Flights",
+  "ctaLink": "/flights"
+},
+
+  "sections": {
+    "before": "Before Your Trip",
+    "during": "During Your Trip"
+  },
+  "labels": {
+    "Required": "Required",
+    "Important": "Important",
+    "Tip": "Tip",
+    "Done": "Done",
+    "Mark as done": "Mark as done",
+    "Why It Matters": "Why It Matters",
+    "done": "Done",
+    "markAsDone": "Mark as done"
+  },
+  "intro": {
+    "title": "What is a Self-Transfer Flight?",
+    "lead": "Discover how to travel smarter with more freedom.",
+    "body": [
+      "A self-transfer flight is built from separate tickets, often across different airlines. Unlike a traditional layover, your flights aren’t linked — so you’ll check in separately, collect your luggage at stopovers, and may pass through customs or immigration depending on the country.",
+      "Why choose self-transfer? It unlocks more route options, gives you more control over your journey, and often means better prices. And with Mytrip’s Self-Transfer Guarantee, you’re covered if things don’t go as planned.",
+      "We’ll guide you through exactly what to expect, every step of the way."
+    ]
+  },
+  "notice": "\u26A0\uFE0F You may be transiting through the Schengen Area. A transit visa could be required.",
+  "cards": [
+    {
+      "key": "checkin",
+      "section": "Before Your Trip",
+      "title": "Check-In for Each Flight",
+      "front": "Online check-in saves time.",
+      "back": "Each self-transfer flight needs its own check-in. Make sure to check in online for every airline before you travel.",
+      "label": { "key": "Required", "text": "Required" }
+    },
+    {
+      "key": "visa",
+      "section": "Before Your Trip",
+      "title": "Visa Requirements",
+      "front": "Some layovers require a visa.",
+      "back": "Even if you don’t leave the airport, you may need a transit visa in some countries. Always check before you go.",
+      "label": { "key": "Important", "text": "Important" }
+    },
+    {
+      "key": "pack",
+      "section": "Before Your Trip",
+      "title": "Pack Accordingly",
+      "front": "Check airline luggage rules.",
+      "back": "Cabin bag size and weight rules vary between airlines. Avoid surprises at the gate by checking in advance.",
+      "label": { "key": "Tip", "text": "Tip" }
+    },
+    {
+      "key": "plan",
+      "section": "Before Your Trip",
+      "title": "Plan Enough Time",
+      "front": "Don’t cut your layover too short.",
+      "back": "For self-transfers, we recommend at least 90–120 minutes between flights to allow for baggage and security.",
+      "label": { "key": "Important", "text": "Important" }
+    },
+    {
+      "key": "bags",
+      "section": "During Your Trip",
+      "title": "Collect & Recheck Bags",
+      "front": "You’ll need to recheck them yourself.",
+      "back": "Even with the same airline, your bag won’t be transferred automatically. Pick it up and check it in again.",
+      "label": { "key": "Required", "text": "Required" }
+    },
+    {
+      "key": "security",
+      "section": "During Your Trip",
+      "title": "Go Through Security Again",
+      "front": "Another checkpoint is likely.",
+      "back": "You’ll exit and re-enter security at your connecting airport. Plan your time accordingly.",
+      "label": { "key": "Important", "text": "Important" }
+    },
+    {
+      "key": "cabin",
+      "section": "During Your Trip",
+      "title": "Short Layover? Cabin Only",
+      "front": "Checked bags can cost you time.",
+      "back": "If your layover is under 2 hours, we strongly recommend cabin-only travel to avoid missed flights.",
+      "label": { "key": "Required", "text": "Required" }
+    },
+    {
+      "key": "guarantee",
+      "section": "During Your Trip",
+      "title": "Self-Transfer Guarantee",
+      "front": "Understand what’s covered.",
+      "back": "The Self-Transfer Guarantee may not apply if your missed flight was due to short layovers or baggage delays.",
+      "label": { "key": "Tip", "text": "Tip" }
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Do I have to collect and recheck my bags?",
+      "answer": "Yes, if you booked a self-transfer, your baggage won’t be moved automatically between flights. You’ll need to collect it and check it in again at your layover airport."
+    },
+    {
+      "question": "Will I go through security again?",
+      "answer": "Usually, yes. You’ll likely exit and re-enter security, especially when changing terminals or airlines."
+    },
+    {
+      "question": "What happens if I miss my flight?",
+      "answer": "Because each flight is a separate booking, missed connections are not automatically rebooked. But if your booking includes Mytrip's Self-Transfer Guarantee, you may be rebooked or refunded."
+    },
+    {
+      "question": "Do I need a visa for my layover country?",
+      "answer": "Maybe. Even if you stay in the airport, some countries require a transit visa. Always check the rules for your layover country before flying."
+    },
+    {
+      "question": "Can I check in for all flights at once?",
+      "answer": "No, each airline requires its own check-in. You’ll need to check in separately for every leg of your trip — online check-in is highly recommended."
+    },
+    {
+      "question": "Can I travel with checked baggage?",
+      "answer": "You can, but it’s riskier. If your layover is short, there might not be enough time to collect and recheck your bags. Consider cabin bags only."
+    },
+    {
+      "question": "What is the Self-Transfer Guarantee?",
+      "answer": "It’s protection from Mytrip that covers missed connections for eligible bookings. If a delay causes you to miss your next flight, we’ll help you get a new one or refund the unused leg."
+    }
+  ],
+  "guarantee": {
+  "heading": "You're Covered with Our Self-Transfer Guarantee",
+  "lead": "Book with confidence. If a delay causes you to miss your connection, we'll help get you back on track — at no extra cost.",
+  "items": [
+    {
+      "icon": "refresh-cw",
+      "title": "Free Rebooking or Refund",
+      "description": "We’ll rebook you for free or refund your trip if you're eligible and miss your next flight due to a delay."
+    },
+    {
+      "icon": "bed",
+      "title": "Overnight Accommodation",
+      "description": "If you're stuck overnight, we’ll help cover hotel costs so you can rest easy."
+    },
+    {
+      "icon": "utensils",
+      "title": "Meals and Refreshments",
+      "description": "Get compensated for food and drinks during long layover delays (4+ hours)."
+    },
+    {
+      "icon": "info",
+      "title": "Easy Eligibility",
+      "description": "You just need to contact us before your missed flight departs. No lengthy forms or arguments."
+    }
+  ],
+  "note": "This coverage doesn’t apply to changes you make yourself, baggage issues due to your airline, or events outside our control (e.g. weather).",
+  "linkText": "Read full terms & conditions",
+  "linkUrl": "/terms"
+}
+}

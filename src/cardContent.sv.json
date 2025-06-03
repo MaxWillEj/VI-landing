@@ -1,0 +1,161 @@
+{
+
+  "hero": {
+    "headline": "Res smartare idag",
+    "subheadline": "Boka bekvämt mer flexibla resor",
+    "ctaLabel": "Hitta flyg",
+    "ctaLink": "/flights"
+},
+
+  "sections": {
+    "before": "Före resan",
+    "during": "Under resan"
+  },
+  "labels": {
+    "Required": "Obligatoriskt",
+    "Important": "Viktigt",
+    "Tip": "Tips",
+    "Done": "Klart",
+    "Mark as done": "Markera som klart",
+    "Why It Matters": "Varför det är viktigt",
+    "whyItMatters": "Varför det är viktigt",
+    "done": "Klar",
+    "markAsDone": "Markera som klar"
+  },
+  "intro": {
+    "title": "Vad är en self-transfer-flygning?",
+    "lead": "Res smartare med mer frihet.",
+    "body": [
+      "En self-transfer-flygning är uppbyggd av separata biljetter, ofta med olika flygbolag. Till skillnad från en vanlig mellanlandning är flygen inte kopplade – så du måste checka in separat, hämta ditt bagage vid mellanlandningar och eventuellt gå igenom tull och passkontroll beroende på landet.",
+      "Varför välja self-transfer? Det öppnar upp fler ruttalternativ, ger dig mer kontroll över din resa och leder ofta till bättre priser. Och med Mytrips Self-Transfer-garanti är du skyddad om något inte går som planerat.",
+      "Vi guidar dig genom vad du kan förvänta dig – steg för steg."
+    ]
+  },
+  "notice": "⚠️ Du kanske mellanlandar i Schengenområdet. Ett transitvisum kan krävas.",
+  "cards": [
+    {
+      "key": "checkin",
+      "section": "Före resan",
+      "title": "Checka in för varje flyg",
+      "front": "Online-incheckning sparar tid.",
+      "back": "Varje self-transfer-flyg kräver separat incheckning. Se till att checka in online för varje flygbolag innan du reser.",
+      "label": { "key": "Required", "text": "Obligatoriskt" }
+    },
+    {
+      "key": "visa",
+      "section": "Före resan",
+      "title": "Visumkrav",
+      "front": "Vissa mellanlandningar kräver visum.",
+      "back": "Även om du inte lämnar flygplatsen kan ett transitvisum krävas i vissa länder. Kontrollera alltid innan du åker.",
+      "label": { "key": "Important", "text": "Viktigt" }
+    },
+    {
+      "key": "pack",
+      "section": "Före resan",
+      "title": "Packa smart",
+      "front": "Kolla regler för bagage.",
+      "back": "Regler för handbagage varierar mellan flygbolag. Undvik överraskningar genom att kontrollera i förväg.",
+      "label": { "key": "Tip", "text": "Tips" }
+    },
+    {
+      "key": "plan",
+      "section": "Före resan",
+      "title": "Planera tillräcklig tid",
+      "front": "Undvik för korta mellanlandningar.",
+      "back": "Vi rekommenderar minst 90–120 minuter mellan flyg för att hinna med bagage och säkerhetskontroll.",
+      "label": { "key": "Important", "text": "Viktigt" }
+    },
+    {
+      "key": "bags",
+      "section": "Under resan",
+      "title": "Hämta och checka in bagage igen",
+      "front": "Du måste göra det själv.",
+      "back": "Även om du flyger med samma flygbolag överförs inte bagaget automatiskt. Hämta det och checka in igen.",
+      "label": { "key": "Required", "text": "Obligatoriskt" }
+    },
+    {
+      "key": "security",
+      "section": "Under resan",
+      "title": "Säkerhetskontroll igen",
+      "front": "Räkna med ett nytt kontrollstopp.",
+      "back": "Du kommer troligen att behöva gå igenom säkerhetskontroll på nytt vid anslutningsflygplatsen.",
+      "label": { "key": "Important", "text": "Viktigt" }
+    },
+    {
+      "key": "cabin",
+      "section": "Under resan",
+      "title": "Kort mellanlandning? Endast handbagage",
+      "front": "Incheckat bagage tar tid.",
+      "back": "Vid mellanlandningar under 2 timmar rekommenderas endast handbagage för att undvika missade flyg.",
+      "label": { "key": "Required", "text": "Obligatoriskt" }
+    },
+    {
+      "key": "guarantee",
+      "section": "Under resan",
+      "title": "Self-transfer-garanti",
+      "front": "Förstå vad som täcks.",
+      "back": "Garantin gäller inte alltid vid korta mellanlandningar eller förseningar vid bagageutlämning.",
+      "label": { "key": "Tip", "text": "Tips" }
+    }
+  ],
+  "faq": [
+    {
+      "question": "Måste jag hämta och checka in mitt bagage igen?",
+      "answer": "Ja, vid self-transfer flyttar inte flygbolagen ditt bagage automatiskt. Du måste själv hämta det och checka in det på nytt vid mellanlandningen."
+    },
+    {
+      "question": "Måste jag gå igenom säkerhetskontrollen igen?",
+      "answer": "Ofta, ja. Du behöver troligen gå ut och sedan in genom säkerhetskontrollen igen – särskilt om du byter terminal eller flygbolag."
+    },
+    {
+      "question": "Vad händer om jag missar mitt flyg?",
+      "answer": "Eftersom flygen är bokade separat får du ingen automatisk ombokning. Men om du har Mytrips Self-Transfer-garanti kan du bli ombokad eller få pengar tillbaka för den missade delen."
+    },
+    {
+      "question": "Behöver jag visum för mitt mellanlandningsland?",
+      "answer": "Kanske. Även om du inte lämnar flygplatsen kan vissa länder kräva ett transitvisum. Kolla reglerna i förväg."
+    },
+    {
+      "question": "Kan jag checka in för alla flyg på en gång?",
+      "answer": "Nej, varje flygbolag kräver en separat incheckning. Du måste checka in individuellt – online-incheckning rekommenderas starkt."
+    },
+    {
+      "question": "Kan jag resa med incheckat bagage?",
+      "answer": "Ja, men det är mer riskabelt. Vid korta mellanlandningar kanske du inte hinner hämta och checka in ditt bagage igen. Handbagage är ofta ett säkrare val."
+    },
+    {
+      "question": "Vad är Self-Transfer-garantin?",
+      "answer": "Det är ett skydd från Mytrip som gäller för vissa bokningar. Om du missar en anslutning på grund av försening kan vi hjälpa dig att boka om eller få tillbaka pengarna för den oanvända delen."
+    }
+  ],
+  "guarantee": {
+  "heading": "Du är skyddad med vår Self-transfer-garanti",
+  "lead": "Boka med trygghet. Om en försening gör att du missar anslutningen, hjälper vi dig vidare — utan extra kostnad.",
+  "items": [
+    {
+      "icon": "refresh-cw",
+      "title": "Om- eller återbokning utan kostnad",
+      "description": "Vi ombokar dig gratis eller återbetalar din resa om du är berättigad och missar nästa flyg på grund av en försening."
+    },
+    {
+      "icon": "bed",
+      "title": "Hotell om du fastnar över natten",
+      "description": "Vi ersätter dig för hotellkostnader om du måste övernatta på grund av en lång försening."
+    },
+    {
+      "icon": "utensils",
+      "title": "Mat och dryck vid lång väntan",
+      "description": "Du kan få ersättning för måltider om du drabbas av en lång väntan (4+ timmar)."
+    },
+    {
+      "icon": "info",
+      "title": "Enkel kvalificering",
+      "description": "Allt du behöver göra är att kontakta oss innan ditt nya flyg avgår. Inga krångliga formulär."
+    }
+  ],
+  "note": "Garantin gäller inte om du själv ändrar din resa, om bagaget blir försenat av flygbolaget, eller vid händelser utanför vår kontroll (t.ex. väder).",
+  "linkText": "Läs fullständiga villkor",
+  "linkUrl": "/terms"
+}
+
+}
