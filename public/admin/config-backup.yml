@@ -2,192 +2,95 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+locale: 'en'
+local_backend: true
 
 collections:
-  - name: "self_transfer_en"
-    label: "Self-Transfer (English)"
-    label_singular: "Page Content"
+  - name: "content"
+    label: "Page Content"
+    format: "json"
     files:
-      - file: "src/content/cardContent.en.json"
-        label: "English Content"
-        name: "self_transfer_en_file"
+      - label: "Hero Section"
+        name: "hero"
+        file: "src/lang/en/hero.json"
         fields:
-          - label: "Hero"
-            name: "hero"
-            widget: object
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "string" }
+          - { label: "CTA Label", name: "ctaLabel", widget: "string" }
+          - { label: "CTA Link", name: "ctaLink", widget: "string" }
+
+      - label: "Intro Section"
+        name: "intro"
+        file: "src/lang/en/intro.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+          - {
+              label: "Body",
+              name: "body",
+              widget: "list",
+              field: { label: "Paragraph", name: "paragraph", widget: "text" }
+            }
+
+      - label: "FAQs"
+        name: "faq"
+        file: "src/lang/en/faq.json"
+        fields:
+          - label: "FAQ List"
+            name: "faq"
+            widget: "list"
             fields:
-              - { label: "Headline", name: "headline", widget: string }
-              - { label: "Subheadline", name: "subheadline", widget: string }
-              - { label: "CTA Label", name: "ctaLabel", widget: string }
-              - { label: "CTA Link", name: "ctaLink", widget: string }
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
 
-          - label: "Intro"
-            name: "intro"
-            widget: object
-            fields:
-              - { label: "Title", name: "title", widget: string }
-              - { label: "Lead", name: "lead", widget: string }
-              - label: "Body"
-                name: "body"
-                widget: list
-                field:
-                  label: "Paragraph"
-                  name: "paragraph"
-                  widget: text
-
-          - { label: "Notice", name: "notice", widget: string }
-
-          - label: "Sections"
-            name: "sections"
-            widget: object
-            fields:
-              - { label: "Before", name: "before", widget: string }
-              - { label: "During", name: "during", widget: string }
-
-          - label: "Labels"
-            name: "labels"
-            widget: object
-            fields:
-              - { label: "Required", name: "Required", widget: string }
-              - { label: "Important", name: "Important", widget: string }
-              - { label: "Tip", name: "Tip", widget: string }
-              - { label: "Done", name: "Done", widget: string }
-              - { label: "Mark as Done", name: "Mark as done", widget: string }
-              - { label: "Why It Matters", name: "Why It Matters", widget: string }
-              - { label: "done (camelCase)", name: "done", widget: string }
-              - { label: "markAsDone (camelCase)", name: "markAsDone", widget: string }
-
+      - label: "Flip Cards"
+        name: "cards"
+        file: "src/lang/en/cards.json"
+        fields:
           - label: "Cards"
             name: "cards"
-            widget: list
+            widget: "list"
             fields:
-              - { label: "Key", name: "key", widget: string }
-              - { label: "Section", name: "section", widget: string }
-              - { label: "Title", name: "title", widget: string }
-              - { label: "Front", name: "front", widget: text }
-              - { label: "Back", name: "back", widget: text }
-              - label: "Label"
-                name: "label"
-                widget: object
-                fields:
-                  - { label: "Key", name: "key", widget: string }
-                  - { label: "Text", name: "text", widget: string }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Back Title", name: "backTitle", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string" }
 
-          - label: "FAQ"
-            name: "faq"
-            widget: list
-            fields:
-              - { label: "Question", name: "question", widget: string }
-              - { label: "Answer", name: "answer", widget: text }
-
-          - label: "Guarantee"
-            name: "guarantee"
-            widget: object
-            fields:
-              - { label: "Heading", name: "heading", widget: string }
-              - { label: "Lead", name: "lead", widget: string }
-              - label: "Items"
-                name: "items"
-                widget: list
-                fields:
-                  - { label: "Icon", name: "icon", widget: string }
-                  - { label: "Title", name: "title", widget: string }
-                  - { label: "Description", name: "description", widget: text }
-              - { label: "Note", name: "note", widget: text }
-              - { label: "Link Text", name: "linkText", widget: string }
-              - { label: "Link URL", name: "linkUrl", widget: string }
-
-  - name: "self_transfer_sv"
-    label: "Self-Transfer (Swedish)"
-    label_singular: "Page Content"
-    files:
-      - file: "src/content/cardContent.sv.json"
-        label: "Swedish Content"
-        name: "self_transfer_sv_file"
+      - label: "Guarantee Section"
+        name: "guarantee"
+        file: "src/lang/en/guarantee.json"
         fields:
-          - label: "Hero"
-            name: "hero"
-            widget: object
-            fields:
-              - { label: "Headline", name: "headline", widget: string }
-              - { label: "Subheadline", name: "subheadline", widget: string }
-              - { label: "CTA Label", name: "ctaLabel", widget: string }
-              - { label: "CTA Link", name: "ctaLink", widget: string }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
+          - {
+              label: "Highlights",
+              name: "highlights",
+              widget: "list",
+              field: { label: "Item", name: "item", widget: "string" }
+            }
 
-          - label: "Intro"
-            name: "intro"
-            widget: object
-            fields:
-              - { label: "Title", name: "title", widget: string }
-              - { label: "Lead", name: "lead", widget: string }
-              - label: "Body"
-                name: "body"
-                widget: list
-                field:
-                  label: "Paragraph"
-                  name: "paragraph"
-                  widget: text
+      - label: "Visa/Region Notice"
+        name: "notice"
+        file: "src/lang/en/notice.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
 
-          - { label: "Notice", name: "notice", widget: string }
+      - label: "UI Labels"
+        name: "labels"
+        file: "src/lang/en/labels.json"
+        fields:
+          - { label: "Checklist", name: "checklist", widget: "string" }
+          - { label: "Show Info", name: "showInfo", widget: "string" }
+          - { label: "Hide Info", name: "hideInfo", widget: "string" }
 
-          - label: "Sections"
-            name: "sections"
-            widget: object
-            fields:
-              - { label: "Before", name: "before", widget: string }
-              - { label: "During", name: "during", widget: string }
-
-          - label: "Labels"
-            name: "labels"
-            widget: object
-            fields:
-              - { label: "Required", name: "Required", widget: string }
-              - { label: "Important", name: "Important", widget: string }
-              - { label: "Tip", name: "Tip", widget: string }
-              - { label: "Done", name: "Done", widget: string }
-              - { label: "Mark as Done", name: "Mark as done", widget: string }
-              - { label: "Why It Matters", name: "Why It Matters", widget: string }
-              - { label: "done (camelCase)", name: "done", widget: string }
-              - { label: "markAsDone (camelCase)", name: "markAsDone", widget: string }
-
-          - label: "Cards"
-            name: "cards"
-            widget: list
-            fields:
-              - { label: "Key", name: "key", widget: string }
-              - { label: "Section", name: "section", widget: string }
-              - { label: "Title", name: "title", widget: string }
-              - { label: "Front", name: "front", widget: text }
-              - { label: "Back", name: "back", widget: text }
-              - label: "Label"
-                name: "label"
-                widget: object
-                fields:
-                  - { label: "Key", name: "key", widget: string }
-                  - { label: "Text", name: "text", widget: string }
-
-          - label: "FAQ"
-            name: "faq"
-            widget: list
-            fields:
-              - { label: "Question", name: "question", widget: string }
-              - { label: "Answer", name: "answer", widget: text }
-
-          - label: "Guarantee"
-            name: "guarantee"
-            widget: object
-            fields:
-              - { label: "Heading", name: "heading", widget: string }
-              - { label: "Lead", name: "lead", widget: string }
-              - label: "Items"
-                name: "items"
-                widget: list
-                fields:
-                  - { label: "Icon", name: "icon", widget: string }
-                  - { label: "Title", name: "title", widget: string }
-                  - { label: "Description", name: "description", widget: text }
-              - { label: "Note", name: "note", widget: text }
-              - { label: "Link Text", name: "linkText", widget: string }
-              - { label: "Link URL", name: "linkUrl", widget: string }
+      - label: "Section Labels"
+        name: "sections"
+        file: "src/lang/en/sections.json"
+        fields:
+          - { label: "Before", name: "before", widget: "string" }
+          - { label: "During", name: "during", widget: "string" }
