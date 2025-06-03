@@ -5,62 +5,50 @@ backend:
 media_folder: "public/assets/uploads"
 public_folder: "/assets/uploads"
 
-i18n:
-  structure: multiple_folders
-  locales: [en, sv]
-  default_locale: en
-
 collections:
-  - name: "self_transfer"
-    label: "Self-Transfer Page"
+  - name: "self_transfer_en"
+    label: "Self-Transfer (English)"
     label_singular: "Page Content"
-    i18n: true
     files:
       - file: "src/content/cardContent.en.json"
         label: "English Content"
-        name: "self_transfer_en"
-        i18n: true
+        name: "self_transfer_en_file"
         fields:
           - label: "Hero"
             name: "hero"
             widget: object
-            i18n: true
             fields:
-              - { label: "Headline", name: "headline", widget: string, i18n: true }
-              - { label: "Subheadline", name: "subheadline", widget: string, i18n: true }
-              - { label: "CTA Label", name: "ctaLabel", widget: string, i18n: true }
-              - { label: "CTA Link", name: "ctaLink", widget: string, i18n: true }
+              - { label: "Headline", name: "headline", widget: string }
+              - { label: "Subheadline", name: "subheadline", widget: string }
+              - { label: "CTA Label", name: "ctaLabel", widget: string }
+              - { label: "CTA Link", name: "ctaLink", widget: string }
 
           - label: "Intro"
             name: "intro"
             widget: object
-            i18n: true
             fields:
-              - { label: "Title", name: "title", widget: string, i18n: true }
-              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Lead", name: "lead", widget: string }
               - label: "Body"
                 name: "body"
                 widget: list
-                i18n: true
                 field:
                   label: "Paragraph"
                   name: "paragraph"
                   widget: text
 
-          - { label: "Notice", name: "notice", widget: string, i18n: true }
+          - { label: "Notice", name: "notice", widget: string }
 
           - label: "Sections"
             name: "sections"
             widget: object
-            i18n: true
             fields:
-              - { label: "Before", name: "before", widget: string, i18n: true }
-              - { label: "During", name: "during", widget: string, i18n: true }
+              - { label: "Before", name: "before", widget: string }
+              - { label: "During", name: "during", widget: string }
 
           - label: "Labels"
             name: "labels"
             widget: object
-            i18n: true
             fields:
               - { label: "Required", name: "Required", widget: string }
               - { label: "Important", name: "Important", widget: string }
@@ -74,93 +62,86 @@ collections:
           - label: "Cards"
             name: "cards"
             widget: list
-            i18n: true
             fields:
               - { label: "Key", name: "key", widget: string }
-              - { label: "Section", name: "section", widget: string, i18n: true }
-              - { label: "Title", name: "title", widget: string, i18n: true }
-              - { label: "Front", name: "front", widget: text, i18n: true }
-              - { label: "Back", name: "back", widget: text, i18n: true }
+              - { label: "Section", name: "section", widget: string }
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Front", name: "front", widget: text }
+              - { label: "Back", name: "back", widget: text }
               - label: "Label"
                 name: "label"
                 widget: object
                 fields:
                   - { label: "Key", name: "key", widget: string }
-                  - { label: "Text", name: "text", widget: string, i18n: true }
+                  - { label: "Text", name: "text", widget: string }
 
           - label: "FAQ"
             name: "faq"
             widget: list
-            i18n: true
             fields:
-              - { label: "Question", name: "question", widget: string, i18n: true }
-              - { label: "Answer", name: "answer", widget: text, i18n: true }
+              - { label: "Question", name: "question", widget: string }
+              - { label: "Answer", name: "answer", widget: text }
 
           - label: "Guarantee"
             name: "guarantee"
             widget: object
-            i18n: true
             fields:
-              - { label: "Heading", name: "heading", widget: string, i18n: true }
-              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - { label: "Heading", name: "heading", widget: string }
+              - { label: "Lead", name: "lead", widget: string }
               - label: "Items"
                 name: "items"
                 widget: list
-                i18n: true
                 fields:
                   - { label: "Icon", name: "icon", widget: string }
-                  - { label: "Title", name: "title", widget: string, i18n: true }
-                  - { label: "Description", name: "description", widget: text, i18n: true }
-              - { label: "Note", name: "note", widget: text, i18n: true }
-              - { label: "Link Text", name: "linkText", widget: string, i18n: true }
+                  - { label: "Title", name: "title", widget: string }
+                  - { label: "Description", name: "description", widget: text }
+              - { label: "Note", name: "note", widget: text }
+              - { label: "Link Text", name: "linkText", widget: string }
               - { label: "Link URL", name: "linkUrl", widget: string }
 
+  - name: "self_transfer_sv"
+    label: "Self-Transfer (Swedish)"
+    label_singular: "Page Content"
+    files:
       - file: "src/content/cardContent.sv.json"
         label: "Swedish Content"
-        name: "self_transfer_sv"
-        i18n: true
+        name: "self_transfer_sv_file"
         fields:
           - label: "Hero"
             name: "hero"
             widget: object
-            i18n: true
             fields:
-              - { label: "Headline", name: "headline", widget: string, i18n: true }
-              - { label: "Subheadline", name: "subheadline", widget: string, i18n: true }
-              - { label: "CTA Label", name: "ctaLabel", widget: string, i18n: true }
-              - { label: "CTA Link", name: "ctaLink", widget: string, i18n: true }
+              - { label: "Headline", name: "headline", widget: string }
+              - { label: "Subheadline", name: "subheadline", widget: string }
+              - { label: "CTA Label", name: "ctaLabel", widget: string }
+              - { label: "CTA Link", name: "ctaLink", widget: string }
 
           - label: "Intro"
             name: "intro"
             widget: object
-            i18n: true
             fields:
-              - { label: "Title", name: "title", widget: string, i18n: true }
-              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Lead", name: "lead", widget: string }
               - label: "Body"
                 name: "body"
                 widget: list
-                i18n: true
                 field:
                   label: "Paragraph"
                   name: "paragraph"
                   widget: text
 
-
-          - { label: "Notice", name: "notice", widget: string, i18n: true }
+          - { label: "Notice", name: "notice", widget: string }
 
           - label: "Sections"
             name: "sections"
             widget: object
-            i18n: true
             fields:
-              - { label: "Before", name: "before", widget: string, i18n: true }
-              - { label: "During", name: "during", widget: string, i18n: true }
+              - { label: "Before", name: "before", widget: string }
+              - { label: "During", name: "during", widget: string }
 
           - label: "Labels"
             name: "labels"
             widget: object
-            i18n: true
             fields:
               - { label: "Required", name: "Required", widget: string }
               - { label: "Important", name: "Important", widget: string }
@@ -174,43 +155,39 @@ collections:
           - label: "Cards"
             name: "cards"
             widget: list
-            i18n: true
             fields:
               - { label: "Key", name: "key", widget: string }
-              - { label: "Section", name: "section", widget: string, i18n: true }
-              - { label: "Title", name: "title", widget: string, i18n: true }
-              - { label: "Front", name: "front", widget: text, i18n: true }
-              - { label: "Back", name: "back", widget: text, i18n: true }
+              - { label: "Section", name: "section", widget: string }
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Front", name: "front", widget: text }
+              - { label: "Back", name: "back", widget: text }
               - label: "Label"
                 name: "label"
                 widget: object
                 fields:
                   - { label: "Key", name: "key", widget: string }
-                  - { label: "Text", name: "text", widget: string, i18n: true }
+                  - { label: "Text", name: "text", widget: string }
 
           - label: "FAQ"
             name: "faq"
             widget: list
-            i18n: true
             fields:
-              - { label: "Question", name: "question", widget: string, i18n: true }
-              - { label: "Answer", name: "answer", widget: text, i18n: true }
+              - { label: "Question", name: "question", widget: string }
+              - { label: "Answer", name: "answer", widget: text }
 
           - label: "Guarantee"
             name: "guarantee"
             widget: object
-            i18n: true
             fields:
-              - { label: "Heading", name: "heading", widget: string, i18n: true }
-              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - { label: "Heading", name: "heading", widget: string }
+              - { label: "Lead", name: "lead", widget: string }
               - label: "Items"
                 name: "items"
                 widget: list
-                i18n: true
                 fields:
                   - { label: "Icon", name: "icon", widget: string }
-                  - { label: "Title", name: "title", widget: string, i18n: true }
-                  - { label: "Description", name: "description", widget: text, i18n: true }
-              - { label: "Note", name: "note", widget: text, i18n: true }
-              - { label: "Link Text", name: "linkText", widget: string, i18n: true }
+                  - { label: "Title", name: "title", widget: string }
+                  - { label: "Description", name: "description", widget: text }
+              - { label: "Note", name: "note", widget: text }
+              - { label: "Link Text", name: "linkText", widget: string }
               - { label: "Link URL", name: "linkUrl", widget: string }
