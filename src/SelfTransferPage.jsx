@@ -27,60 +27,61 @@ function SelfTransferPage() {
   const beforeRef = useRef(null);
   const duringRef = useRef(null);
 
-  const contentMap = import.meta.glob('./lang/**/**/*.json');
+  const contentMap = import.meta.glob('/src/lang/**/**/*.json');
+
 
   const loadLanguage = useCallback(async (selectedLang) => {
-    try {
-      // 🪵 STEP 1: Log all available file paths
-      console.log("🧩 Available keys in contentMap:", Object.keys(contentMap));
+  try {
+    const paths = [
+      'hero.json',
+      'intro.json',
+      'faq.json',
+      'cards.json',
+      'labels.json',
+      'sections.json',
+      'notice.json',
+      'guarantee.json'
+    ];
 
-      const paths = [
-        'hero.json',
-        'intro.json',
-        'faq.json',
-        'cards.json',
-        'labels.json',
-        'sections.json',
-        'notice.json',
-        'guarantee.json'
-      ];
+    // ✅ Log all available keys
+    console.log("🧩 Available keys in contentMap:", Object.keys(contentMap));
 
-      // ✅ STEP 2: Load language files with error handling for missing ones
-      const data = await Promise.all(
-        paths.map(p => {
-          const key = `./lang/${selectedLang}/${p}`;
-          const loader = contentMap[key];
-          if (!loader) throw new Error(`Missing import for: ${key}`);
-          return loader().then(mod => mod.default);
-        })
-      );
+    const data = await Promise.all(
+      paths.map(p => {
+        const key = `/src/lang/${selectedLang}/${p}`;
+        console.log("🧩 Trying key:", key);
+        const loader = contentMap[key];
+        if (!loader) throw new Error(`Missing import for: ${key}`);
+        return loader().then(mod => mod.default);
+      })
+    );
 
-      const [hero, intro, faq, cards, labels, sections, notice, guarantee] = data;
+    const [hero, intro, faq, cards, labels, sections, notice, guarantee] = data;
 
-      setHeroContent(hero.hero);
-      setIntroContent(intro.intro);
-      setFaqs(faq.faq);
-      setCards(cards.cards);
-      setLabels(labels.labels);
-      setSectionLabels(sections.sections);
-      setRegionNotice(notice.notice);
-      setGuaranteeContent(guarantee.guarantee);
-      setFlippedStates(cards.cards.map(() => false));
-      setChecklist(
-        JSON.parse(localStorage.getItem("selfTransferChecklist")) ||
-        cards.cards.map(() => false)
-      );
+    setHeroContent(hero.hero);
+    setIntroContent(intro.intro);
+    setFaqs(faq.faq);
+    setCards(cards.cards);
+    setLabels(labels.labels);
+    setSectionLabels(sections.sections);
+    setRegionNotice(notice.notice);
+    setGuaranteeContent(guarantee.guarantee);
+    setFlippedStates(cards.cards.map(() => false));
+    setChecklist(
+      JSON.parse(localStorage.getItem("selfTransferChecklist")) ||
+      cards.cards.map(() => false)
+    );
 
-      trackEvent("Language Loaded", { lang: selectedLang });
-    } catch (err) {
-      console.warn("Falling back to English content.", err);
-      if (selectedLang !== "en") {
-        loadLanguage("en");
-      } else {
-        console.error("❌ Even English content failed to load.");
-      }
+    trackEvent("Language Loaded", { lang: selectedLang });
+  } catch (err) {
+    console.warn("Falling back to English content.", err);
+    if (selectedLang !== "en") {
+      loadLanguage("en");
+    } else {
+      console.error("❌ Even English content failed to load.");
     }
-  }, []);
+  }
+}, []);
   useEffect(() => {
     loadLanguage(lang);
   }, [lang, loadLanguage]);
