@@ -1,0 +1,92 @@
+{
+  "cards": [
+    {
+      "key": "checkin",
+      "section": "Before Your Trip",
+      "title": "Check-In for Each Flight",
+      "front": "Online check-in saves time.",
+      "back": "Each self-transfer flight needs its own check-in. Make sure to check in online for every airline before you travel.",
+      "label": {
+        "key": "Required",
+        "text": "Required"
+      }
+    },
+    {
+      "key": "visa",
+      "section": "Before Your Trip",
+      "title": "Visa Requirements",
+      "front": "Some layovers require a visa.",
+      "back": "Even if you don’t leave the airport, you may need a transit visa in some countries. Always check before you go.",
+      "label": {
+        "key": "Important",
+        "text": "Important"
+      }
+    },
+    {
+      "key": "pack",
+      "section": "Before Your Trip",
+      "title": "Pack Accordingly",
+      "front": "Check airline luggage rules.",
+      "back": "Cabin bag size and weight rules vary between airlines. Avoid surprises at the gate by checking in advance.",
+      "label": {
+        "key": "Tip",
+        "text": "Tip"
+      }
+    },
+    {
+      "key": "plan",
+      "section": "Before Your Trip",
+      "title": "Plan Enough Time",
+      "front": "Don’t cut your layover too short.",
+      "back": "For self-transfers, we recommend at least 90–120 minutes between flights to allow for baggage and security.",
+      "label": {
+        "key": "Important",
+        "text": "Important"
+      }
+    },
+    {
+      "key": "bags",
+      "section": "During Your Trip",
+      "title": "Collect & Recheck Bags",
+      "front": "You’ll need to recheck them yourself.",
+      "back": "Even with the same airline, your bag won’t be transferred automatically. Pick it up and check it in again.",
+      "label": {
+        "key": "Required",
+        "text": "Required"
+      }
+    },
+    {
+      "key": "security",
+      "section": "During Your Trip",
+      "title": "Go Through Security Again",
+      "front": "Another checkpoint is likely.",
+      "back": "You’ll exit and re-enter security at your connecting airport. Plan your time accordingly.",
+      "label": {
+        "key": "Important",
+        "text": "Important"
+      }
+    },
+    {
+      "key": "cabin",
+      "section": "During Your Trip",
+      "title": "Short Layover? Cabin Only",
+      "front": "Checked bags can cost you time.",
+      "back": "If your layover is under 2 hours, we strongly recommend cabin-only travel to avoid missed flights.",
+      "label": {
+        "key": "Required",
+        "text": "Required"
+      }
+    },
+    {
+      "key": "guarantee",
+      "section": "During Your Trip",
+      "title": "Self-Transfer Guarantee",
+      "front": "Understand what’s covered.",
+      "back": "The Self-Transfer Guarantee may not apply if your missed flight was due to short layovers or baggage delays.",
+      "label": {
+        "key": "Tip",
+        "text": "Tip"
+      }
+    }
+  ]
+}

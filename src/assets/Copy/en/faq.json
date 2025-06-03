@@ -1,0 +1,32 @@
+{
+  "faq": [
+    {
+      "question": "Do I have to collect and recheck my bags?",
+      "answer": "Yes, if you booked a self-transfer, your baggage won’t be moved automatically between flights. You’ll need to collect it and check it in again at your layover airport."
+    },
+    {
+      "question": "Will I go through security again?",
+      "answer": "Usually, yes. You’ll likely exit and re-enter security, especially when changing terminals or airlines."
+    },
+    {
+      "question": "What happens if I miss my flight?",
+      "answer": "Because each flight is a separate booking, missed connections are not automatically rebooked. But if your booking includes Mytrip's Self-Transfer Guarantee, you may be rebooked or refunded."
+    },
+    {
+      "question": "Do I need a visa for my layover country?",
+      "answer": "Maybe. Even if you stay in the airport, some countries require a transit visa. Always check the rules for your layover country before flying."
+    },
+    {
+      "question": "Can I check in for all flights at once?",
+      "answer": "No, each airline requires its own check-in. You’ll need to check in separately for every leg of your trip — online check-in is highly recommended."
+    },
+    {
+      "question": "Can I travel with checked baggage?",
+      "answer": "You can, but it’s riskier. If your layover is short, there might not be enough time to collect and recheck your bags. Consider cabin bags only."
+    },
+    {
+      "question": "What is the Self-Transfer Guarantee?",
+      "answer": "It’s protection from Mytrip that covers missed connections for eligible bookings. If a delay causes you to miss your next flight, we’ll help you get a new one or refund the unused leg."
+    }
+  ]
+}

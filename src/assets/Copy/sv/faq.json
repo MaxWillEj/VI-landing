@@ -1,0 +1,32 @@
+{
+  "faq": [
+    {
+      "question": "Måste jag hämta och checka in mitt bagage igen?",
+      "answer": "Ja, vid self-transfer flyttar inte flygbolagen ditt bagage automatiskt. Du måste själv hämta det och checka in det på nytt vid mellanlandningen."
+    },
+    {
+      "question": "Måste jag gå igenom säkerhetskontrollen igen?",
+      "answer": "Ofta, ja. Du behöver troligen gå ut och sedan in genom säkerhetskontrollen igen – särskilt om du byter terminal eller flygbolag."
+    },
+    {
+      "question": "Vad händer om jag missar mitt flyg?",
+      "answer": "Eftersom flygen är bokade separat får du ingen automatisk ombokning. Men om du har Mytrips Self-Transfer-garanti kan du bli ombokad eller få pengar tillbaka för den missade delen."
+    },
+    {
+      "question": "Behöver jag visum för mitt mellanlandningsland?",
+      "answer": "Kanske. Även om du inte lämnar flygplatsen kan vissa länder kräva ett transitvisum. Kolla reglerna i förväg."
+    },
+    {
+      "question": "Kan jag checka in för alla flyg på en gång?",
+      "answer": "Nej, varje flygbolag kräver en separat incheckning. Du måste checka in individuellt – online-incheckning rekommenderas starkt."
+    },
+    {
+      "question": "Kan jag resa med incheckat bagage?",
+      "answer": "Ja, men det är mer riskabelt. Vid korta mellanlandningar kanske du inte hinner hämta och checka in ditt bagage igen. Handbagage är ofta ett säkrare val."
+    },
+    {
+      "question": "Vad är Self-Transfer-garantin?",
+      "answer": "Det är ett skydd från Mytrip som gäller för vissa bokningar. Om du missar en anslutning på grund av försening kan vi hjälpa dig att boka om eller få tillbaka pengarna för den oanvända delen."
+    }
+  ]
+}

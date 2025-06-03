@@ -25,34 +25,41 @@ function SelfTransferPage() {
   const duringRef = useRef(null);
 
   const loadLanguage = useCallback((selectedLang) => {
-    import(`./cardContent.${selectedLang}.json`).then((data) => {
-      setCards(data.cards);
-      setHeroContent(data.hero || {});
-      setFaqs(data.faq || []);
-      setIntroContent(data.intro || {});
-      setRegionNotice(data.notice || null);
-      setLabels(data.labels || {});
-      setSectionLabels(data.sections || {});
-      setGuaranteeContent(data.guarantee || {});
-      setFlippedStates(data.cards.map(() => false));
+  const path = `./assets/${selectedLang}`;
+
+  Promise.all([
+    import(`${path}/hero.json`),
+    import(`${path}/intro.json`),
+    import(`${path}/faq.json`),
+    import(`${path}/cards.json`),
+    import(`${path}/labels.json`),
+    import(`${path}/sections.json`),
+    import(`${path}/notice.json`),
+    import(`${path}/guarantee.json`)
+  ])
+    .then(([hero, intro, faq, cards, labels, sections, notice, guarantee]) => {
+      setHeroContent(hero.hero);
+      setIntroContent(intro.intro);
+      setFaqs(faq.faq);
+      setCards(cards.cards);
+      setLabels(labels.labels);
+      setSectionLabels(sections.sections);
+      setRegionNotice(notice.notice);
+      setGuaranteeContent(guarantee.guarantee);
+      setFlippedStates(cards.cards.map(() => false));
       setChecklist(
         JSON.parse(localStorage.getItem("selfTransferChecklist")) ||
-        data.cards.map(() => false)
+        cards.cards.map(() => false)
       );
       trackEvent("Language Loaded", { lang: selectedLang });
-    }).catch(() => {
-      console.warn("Falling back to English content.");
-      import("./cardContent.en.json").then((data) => {
-        setCards(data.cards);
-        setIntroContent(data.intro || {});
-        setRegionNotice(data.notice || null);
-        setLabels(data.labels || {});
-        setSectionLabels(data.sections || {});
-        setFlippedStates(data.cards.map(() => false));
-        setChecklist(data.cards.map(() => false));
-      });
+    })
+    .catch((err) => {
+      console.warn("Falling back to English content.", err);
+      if (selectedLang !== "en") {
+        loadLanguage("en"); // Retry with English fallback
+      }
     });
-  }, []);
+}, []);
 
   useEffect(() => {
     loadLanguage(lang);

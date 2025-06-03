@@ -1,0 +1,12 @@
+{
+  "labels": {
+    "Required": "Required",
+    "Important": "Important",
+    "Tip": "Tip",
+    "Done": "Done",
+    "Mark as done": "Mark as done",
+    "Why It Matters": "Why It Matters",
+    "done": "Done",
+    "markAsDone": "Mark as done"
+  }
+}
