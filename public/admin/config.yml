@@ -9,92 +9,88 @@ locale: 'en'
 local_backend: true
 
 collections:
-  - name: "hero"
-    label: "Hero Section"
-    file: "src/lang/en/hero.json"
+  - name: "content"
+    label: "Page Content"
     format: "json"
-    fields:
-      - { label: "Headline", name: "headline", widget: "string" }
-      - { label: "Subheadline", name: "subheadline", widget: "string" }
-      - { label: "CTA Label", name: "ctaLabel", widget: "string" }
-      - { label: "CTA Link", name: "ctaLink", widget: "string" }
-
-  - name: "intro"
-    label: "Intro Section"
-    file: "src/lang/en/intro.json"
-    format: "json"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Lead", name: "lead", widget: "string" }
-      - {
-          label: "Body",
-          name: "body",
-          widget: "list",
-          field: { label: "Paragraph", name: "paragraph", widget: "text" }
-        }
-
-  - name: "faq"
-    label: "FAQs"
-    file: "src/lang/en/faq.json"
-    format: "json"
-    fields:
-      - label: "FAQ List"
-        name: "faq"
-        widget: "list"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "src/lang/en/hero.json"
         fields:
-          - { label: "Question", name: "question", widget: "string" }
-          - { label: "Answer", name: "answer", widget: "text" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "string" }
+          - { label: "CTA Label", name: "ctaLabel", widget: "string" }
+          - { label: "CTA Link", name: "ctaLink", widget: "string" }
 
-  - name: "cards"
-    label: "Flip Cards"
-    file: "src/lang/en/cards.json"
-    format: "json"
-    fields:
-      - label: "Cards"
-        name: "cards"
-        widget: "list"
+      - label: "Intro Section"
+        name: "intro"
+        file: "src/lang/en/intro.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Back Title", name: "backTitle", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+          - {
+              label: "Body",
+              name: "body",
+              widget: "list",
+              field: { label: "Paragraph", name: "paragraph", widget: "text" }
+            }
+
+      - label: "FAQs"
+        name: "faq"
+        file: "src/lang/en/faq.json"
+        fields:
+          - label: "FAQ List"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+      - label: "Flip Cards"
+        name: "cards"
+        file: "src/lang/en/cards.json"
+        fields:
+          - label: "Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Back Title", name: "backTitle", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string" }
+
+      - label: "Guarantee Section"
+        name: "guarantee"
+        file: "src/lang/en/guarantee.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-          - { label: "Icon", name: "icon", widget: "string" }
+          - {
+              label: "Highlights",
+              name: "highlights",
+              widget: "list",
+              field: { label: "Item", name: "item", widget: "string" }
+            }
 
-  - name: "guarantee"
-    label: "Guarantee Section"
-    file: "src/lang/en/guarantee.json"
-    format: "json"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Lead", name: "lead", widget: "string" }
-      - { label: "Body", name: "body", widget: "text" }
-      - {
-          label: "Highlights",
-          name: "highlights",
-          widget: "list",
-          field: { label: "Item", name: "item", widget: "string" }
-        }
+      - label: "Visa/Region Notice"
+        name: "notice"
+        file: "src/lang/en/notice.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
 
-  - name: "notice"
-    label: "Visa/Region Notice"
-    file: "src/lang/en/notice.json"
-    format: "json"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "text" }
+      - label: "UI Labels"
+        name: "labels"
+        file: "src/lang/en/labels.json"
+        fields:
+          - { label: "Checklist", name: "checklist", widget: "string" }
+          - { label: "Show Info", name: "showInfo", widget: "string" }
+          - { label: "Hide Info", name: "hideInfo", widget: "string" }
 
-  - name: "labels"
-    label: "UI Labels"
-    file: "src/lang/en/labels.json"
-    format: "json"
-    fields:
-      - { label: "Checklist", name: "checklist", widget: "string" }
-      - { label: "Show Info", name: "showInfo", widget: "string" }
-      - { label: "Hide Info", name: "hideInfo", widget: "string" }
-
-  - name: "sections"
-    label: "Section Labels"
-    file: "src/lang/en/sections.json"
-    format: "json"
-    fields:
-      - { label: "Before", name: "before", widget: "string" }
-      - { label: "During", name: "during", widget: "string" }
+      - label: "Section Labels"
+        name: "sections"
+        file: "src/lang/en/sections.json"
+        fields:
+          - { label: "Before", name: "before", widget: "string" }
+          - { label: "During", name: "during", widget: "string" }
