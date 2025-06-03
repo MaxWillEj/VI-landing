@@ -1,0 +1,201 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+i18n:
+  structure: multiple_folders
+  locales: [en, sv]
+  default_locale: en
+
+collections:
+  - name: "self_transfer"
+    label: "Self-Transfer Page"
+    label_singular: "Page Content"
+    i18n: true
+    files:
+      - file: "src/content/cardContent.en.json"
+        label: "English Content"
+        name: "self_transfer_en"
+        i18n: true
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Headline", name: "headline", widget: string, i18n: true }
+              - { label: "Subheadline", name: "subheadline", widget: string, i18n: true }
+              - { label: "CTA Label", name: "ctaLabel", widget: string, i18n: true }
+              - { label: "CTA Link", name: "ctaLink", widget: string, i18n: true }
+
+          - label: "Intro"
+            name: "intro"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Title", name: "title", widget: string, i18n: true }
+              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - { label: "Body", name: "body", widget: list, i18n: true, field: { label: "Paragraph", widget: text } }
+
+          - { label: "Notice", name: "notice", widget: string, i18n: true }
+
+          - label: "Sections"
+            name: "sections"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Before", name: "before", widget: string, i18n: true }
+              - { label: "During", name: "during", widget: string, i18n: true }
+
+          - label: "Labels"
+            name: "labels"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Required", name: "Required", widget: string }
+              - { label: "Important", name: "Important", widget: string }
+              - { label: "Tip", name: "Tip", widget: string }
+              - { label: "Done", name: "Done", widget: string }
+              - { label: "Mark as Done", name: "Mark as done", widget: string }
+              - { label: "Why It Matters", name: "Why It Matters", widget: string }
+              - { label: "done (camelCase)", name: "done", widget: string }
+              - { label: "markAsDone (camelCase)", name: "markAsDone", widget: string }
+
+          - label: "Cards"
+            name: "cards"
+            widget: list
+            i18n: true
+            fields:
+              - { label: "Key", name: "key", widget: string }
+              - { label: "Section", name: "section", widget: string, i18n: true }
+              - { label: "Title", name: "title", widget: string, i18n: true }
+              - { label: "Front", name: "front", widget: text, i18n: true }
+              - { label: "Back", name: "back", widget: text, i18n: true }
+              - label: "Label"
+                name: "label"
+                widget: object
+                fields:
+                  - { label: "Key", name: "key", widget: string }
+                  - { label: "Text", name: "text", widget: string, i18n: true }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: list
+            i18n: true
+            fields:
+              - { label: "Question", name: "question", widget: string, i18n: true }
+              - { label: "Answer", name: "answer", widget: text, i18n: true }
+
+          - label: "Guarantee"
+            name: "guarantee"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Heading", name: "heading", widget: string, i18n: true }
+              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - label: "Items"
+                name: "items"
+                widget: list
+                i18n: true
+                fields:
+                  - { label: "Icon", name: "icon", widget: string }
+                  - { label: "Title", name: "title", widget: string, i18n: true }
+                  - { label: "Description", name: "description", widget: text, i18n: true }
+              - { label: "Note", name: "note", widget: text, i18n: true }
+              - { label: "Link Text", name: "linkText", widget: string, i18n: true }
+              - { label: "Link URL", name: "linkUrl", widget: string }
+
+      - file: "src/content/cardContent.sv.json"
+        label: "Swedish Content"
+        name: "self_transfer_sv"
+        i18n: true
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Headline", name: "headline", widget: string, i18n: true }
+              - { label: "Subheadline", name: "subheadline", widget: string, i18n: true }
+              - { label: "CTA Label", name: "ctaLabel", widget: string, i18n: true }
+              - { label: "CTA Link", name: "ctaLink", widget: string, i18n: true }
+
+          - label: "Intro"
+            name: "intro"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Title", name: "title", widget: string, i18n: true }
+              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - { label: "Body", name: "body", widget: list, i18n: true, field: { label: "Paragraph", widget: text } }
+
+          - { label: "Notice", name: "notice", widget: string, i18n: true }
+
+          - label: "Sections"
+            name: "sections"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Before", name: "before", widget: string, i18n: true }
+              - { label: "During", name: "during", widget: string, i18n: true }
+
+          - label: "Labels"
+            name: "labels"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Required", name: "Required", widget: string }
+              - { label: "Important", name: "Important", widget: string }
+              - { label: "Tip", name: "Tip", widget: string }
+              - { label: "Done", name: "Done", widget: string }
+              - { label: "Mark as Done", name: "Mark as done", widget: string }
+              - { label: "Why It Matters", name: "Why It Matters", widget: string }
+              - { label: "done (camelCase)", name: "done", widget: string }
+              - { label: "markAsDone (camelCase)", name: "markAsDone", widget: string }
+
+          - label: "Cards"
+            name: "cards"
+            widget: list
+            i18n: true
+            fields:
+              - { label: "Key", name: "key", widget: string }
+              - { label: "Section", name: "section", widget: string, i18n: true }
+              - { label: "Title", name: "title", widget: string, i18n: true }
+              - { label: "Front", name: "front", widget: text, i18n: true }
+              - { label: "Back", name: "back", widget: text, i18n: true }
+              - label: "Label"
+                name: "label"
+                widget: object
+                fields:
+                  - { label: "Key", name: "key", widget: string }
+                  - { label: "Text", name: "text", widget: string, i18n: true }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: list
+            i18n: true
+            fields:
+              - { label: "Question", name: "question", widget: string, i18n: true }
+              - { label: "Answer", name: "answer", widget: text, i18n: true }
+
+          - label: "Guarantee"
+            name: "guarantee"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Heading", name: "heading", widget: string, i18n: true }
+              - { label: "Lead", name: "lead", widget: string, i18n: true }
+              - label: "Items"
+                name: "items"
+                widget: list
+                i18n: true
+                fields:
+                  - { label: "Icon", name: "icon", widget: string }
+                  - { label: "Title", name: "title", widget: string, i18n: true }
+                  - { label: "Description", name: "description", widget: text, i18n: true }
+              - { label: "Note", name: "note", widget: text, i18n: true }
+              - { label: "Link Text", name: "linkText", widget: string, i18n: true }
+              - { label: "Link URL", name: "linkUrl", widget: string }
