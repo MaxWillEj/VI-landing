@@ -1,32 +1,32 @@
 {
   "faq": [
     {
-      "question": "Måste jag hämta och checka in mitt bagage igen?",
-      "answer": "Ja, vid self-transfer flyttar inte flygbolagen ditt bagage automatiskt. Du måste själv hämta det och checka in det på nytt vid mellanlandningen."
+      "question": "Do I have to collect and recheck my bags?",
+      "answer": "Yes, if you booked a self-transfer, your baggage won’t be moved automatically between flights. You’ll need to collect it and check it in again at your layover airport."
     },
     {
-      "question": "Måste jag gå igenom säkerhetskontrollen igen?",
-      "answer": "Ofta, ja. Du behöver troligen gå ut och sedan in genom säkerhetskontrollen igen – särskilt om du byter terminal eller flygbolag."
+      "question": "Will I go through security again?",
+      "answer": "Usually, yes. You’ll likely exit and re-enter security, especially when changing terminals or airlines."
     },
     {
-      "question": "Vad händer om jag missar mitt flyg?",
-      "answer": "Eftersom flygen är bokade separat får du ingen automatisk ombokning. Men om du har Mytrips Self-Transfer-garanti kan du bli ombokad eller få pengar tillbaka för den missade delen."
+      "question": "What happens if I miss my flight?",
+      "answer": "Because each flight is a separate booking, missed connections are not automatically rebooked. But if your booking includes Mytrip's Self-Transfer Guarantee, you may be rebooked or refunded."
     },
     {
-      "question": "Behöver jag visum för mitt mellanlandningsland?",
-      "answer": "Kanske. Även om du inte lämnar flygplatsen kan vissa länder kräva ett transitvisum. Kolla reglerna i förväg."
+      "question": "Do I need a visa for my layover country?",
+      "answer": "Maybe. Even if you stay in the airport, some countries require a transit visa. Always check the rules for your layover country before flying."
     },
     {
-      "question": "Kan jag checka in för alla flyg på en gång?",
-      "answer": "Nej, varje flygbolag kräver en separat incheckning. Du måste checka in individuellt – online-incheckning rekommenderas starkt."
+      "question": "Can I check in for all flights at once?",
+      "answer": "No, each airline requires its own check-in. You’ll need to check in separately for every leg of your trip — online check-in is highly recommended."
     },
     {
-      "question": "Kan jag resa med incheckat bagage?",
-      "answer": "Ja, men det är mer riskabelt. Vid korta mellanlandningar kanske du inte hinner hämta och checka in ditt bagage igen. Handbagage är ofta ett säkrare val."
+      "question": "Can I travel with checked baggage?",
+      "answer": "You can, but it’s riskier. If your layover is short, there might not be enough time to collect and recheck your bags. Consider cabin bags only."
     },
     {
-      "question": "Vad är Self-Transfer-garantin?",
-      "answer": "Det är ett skydd från Mytrip som gäller för vissa bokningar. Om du missar en anslutning på grund av försening kan vi hjälpa dig att boka om eller få tillbaka pengarna för den oanvända delen."
+      "question": "What is the Self-Transfer Guarantee?",
+      "answer": "It’s protection from Mytrip that covers missed connections for eligible bookings. If a delay causes you to miss your next flight, we’ll help you get a new one or refund the unused leg."
     }
   ]
 }

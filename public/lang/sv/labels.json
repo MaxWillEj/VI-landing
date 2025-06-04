@@ -1,13 +1,12 @@
 {
   "labels": {
-    "Required": "Obligatoriskt",
-    "Important": "Viktigt",
-    "Tip": "Tips",
-    "Done": "Klart",
-    "Mark as done": "Markera som klart",
-    "Why It Matters": "Varför det är viktigt",
-    "whyItMatters": "Varför det är viktigt",
-    "done": "Klar",
-    "markAsDone": "Markera som klar"
+    "Required": "Required",
+    "Important": "Important",
+    "Tip": "Tip",
+    "Done": "Done",
+    "Mark as done": "Mark as done",
+    "Why It Matters": "Why It Matters",
+    "done": "Done",
+    "markAsDone": "Mark as done"
   }
 }
