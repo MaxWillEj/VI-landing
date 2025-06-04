@@ -1,0 +1,92 @@
+{
+  "cards": [
+    {
+      "key": "checkin",
+      "section": "Före resan",
+      "title": "Checka in för varje flyg",
+      "front": "Online-incheckning sparar tid.",
+      "back": "Varje self-transfer-flyg kräver separat incheckning. Se till att checka in online för varje flygbolag innan du reser.",
+      "label": {
+        "key": "Required",
+        "text": "Obligatoriskt"
+      }
+    },
+    {
+      "key": "visa",
+      "section": "Före resan",
+      "title": "Visumkrav",
+      "front": "Vissa mellanlandningar kräver visum.",
+      "back": "Även om du inte lämnar flygplatsen kan ett transitvisum krävas i vissa länder. Kontrollera alltid innan du åker.",
+      "label": {
+        "key": "Important",
+        "text": "Viktigt"
+      }
+    },
+    {
+      "key": "pack",
+      "section": "Före resan",
+      "title": "Packa smart",
+      "front": "Kolla regler för bagage.",
+      "back": "Regler för handbagage varierar mellan flygbolag. Undvik överraskningar genom att kontrollera i förväg.",
+      "label": {
+        "key": "Tip",
+        "text": "Tips"
+      }
+    },
+    {
+      "key": "plan",
+      "section": "Före resan",
+      "title": "Planera tillräcklig tid",
+      "front": "Undvik för korta mellanlandningar.",
+      "back": "Vi rekommenderar minst 90–120 minuter mellan flyg för att hinna med bagage och säkerhetskontroll.",
+      "label": {
+        "key": "Important",
+        "text": "Viktigt"
+      }
+    },
+    {
+      "key": "bags",
+      "section": "Under resan",
+      "title": "Hämta och checka in bagage igen",
+      "front": "Du måste göra det själv.",
+      "back": "Även om du flyger med samma flygbolag överförs inte bagaget automatiskt. Hämta det och checka in igen.",
+      "label": {
+        "key": "Required",
+        "text": "Obligatoriskt"
+      }
+    },
+    {
+      "key": "security",
+      "section": "Under resan",
+      "title": "Säkerhetskontroll igen",
+      "front": "Räkna med ett nytt kontrollstopp.",
+      "back": "Du kommer troligen att behöva gå igenom säkerhetskontroll på nytt vid anslutningsflygplatsen.",
+      "label": {
+        "key": "Important",
+        "text": "Viktigt"
+      }
+    },
+    {
+      "key": "cabin",
+      "section": "Under resan",
+      "title": "Kort mellanlandning? Endast handbagage",
+      "front": "Incheckat bagage tar tid.",
+      "back": "Vid mellanlandningar under 2 timmar rekommenderas endast handbagage för att undvika missade flyg.",
+      "label": {
+        "key": "Required",
+        "text": "Obligatoriskt"
+      }
+    },
+    {
+      "key": "guarantee",
+      "section": "Under resan",
+      "title": "Self-transfer-garanti",
+      "front": "Förstå vad som täcks.",
+      "back": "Garantin gäller inte alltid vid korta mellanlandningar eller förseningar vid bagageutlämning.",
+      "label": {
+        "key": "Tip",
+        "text": "Tips"
+      }
+    }
+  ]
+}

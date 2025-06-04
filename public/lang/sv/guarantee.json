@@ -1,0 +1,31 @@
+{
+  "guarantee": {
+    "heading": "Du är skyddad med vår Self-transfer-garanti",
+    "lead": "Boka med trygghet. Om en försening gör att du missar anslutningen, hjälper vi dig vidare — utan extra kostnad.",
+    "items": [
+      {
+        "icon": "refresh-cw",
+        "title": "Om- eller återbokning utan kostnad",
+        "description": "Vi ombokar dig gratis eller återbetalar din resa om du är berättigad och missar nästa flyg på grund av en försening."
+      },
+      {
+        "icon": "bed",
+        "title": "Hotell om du fastnar över natten",
+        "description": "Vi ersätter dig för hotellkostnader om du måste övernatta på grund av en lång försening."
+      },
+      {
+        "icon": "utensils",
+        "title": "Mat och dryck vid lång väntan",
+        "description": "Du kan få ersättning för måltider om du drabbas av en lång väntan (4+ timmar)."
+      },
+      {
+        "icon": "info",
+        "title": "Enkel kvalificering",
+        "description": "Allt du behöver göra är att kontakta oss innan ditt nya flyg avgår. Inga krångliga formulär."
+      }
+    ],
+    "note": "Garantin gäller inte om du själv ändrar din resa, om bagaget blir försenat av flygbolaget, eller vid händelser utanför vår kontroll (t.ex. väder).",
+    "linkText": "Läs fullständiga villkor",
+    "linkUrl": "/terms"
+  }
+}

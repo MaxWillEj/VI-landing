@@ -43,16 +43,11 @@ function SelfTransferPage() {
       'guarantee.json'
     ];
 
-    // ✅ Log all available keys
-    console.log("🧩 Available keys in contentMap:", Object.keys(contentMap));
-
     const data = await Promise.all(
-      paths.map(p => {
-        const key = `/src/lang/${selectedLang}/${p}`;
-        console.log("🧩 Trying key:", key);
-        const loader = contentMap[key];
-        if (!loader) throw new Error(`Missing import for: ${key}`);
-        return loader().then(mod => mod.default);
+      paths.map(async (file) => {
+        const res = await fetch(`/lang/${selectedLang}/${file}?t=${Date.now()}`);
+        if (!res.ok) throw new Error(`Failed to load ${file} for ${selectedLang}`);
+        return res.json();
       })
     );
 
@@ -74,7 +69,7 @@ function SelfTransferPage() {
 
     trackEvent("Language Loaded", { lang: selectedLang });
   } catch (err) {
-    console.warn("Falling back to English content.", err);
+    console.warn("Fallback to English:", err);
     if (selectedLang !== "en") {
       loadLanguage("en");
     } else {
